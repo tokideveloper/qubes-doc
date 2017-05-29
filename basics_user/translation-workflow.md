@@ -35,7 +35,9 @@ Thus, the lister needs access to information concerning visitor access rate.
 
 **Current beautifiers:** &hellip;, &hellip; *at least contact details or a (nick)name*
 
-### Translation Priority List (TO BE EXTRACTED TO ITS OWN FILE) ###
+### Translation Priority List ###
+
+**(TO BE EXTRACTED TO ITS OWN FILE)**
 
 The following list is sorted by priority of translation, highest proirity first.
 This list is also for keeping tracking of each single file at its current version(s) (old/new, (untranslated)/(translated into languages X, Y, Z), etc.)
@@ -48,10 +50,11 @@ The Beautifier
 
 The beautifier has to prepare the source files for translation. This includes:
 
+- checking the [Translation Priority List] to decide which file to beautify first,
 - transforming them into correct English,
-- following the [Markdown conventions](/doc/doc-guidelines/#markdown-conventions),
+- following the [Markdown Conventions],
 - checking links if they work properly
-- update the column `Beautified` in the Translation Priority List (see above) and
+- update the column `Beautified` in the [Translation Priority List] and
 - updating the official webpages if an English phrase has been proposed to be improved. (This includes proposals given at Transifex, thus, the beautifier has to watch the issues and comments there.)
 
 Thus, the beautifier
@@ -69,10 +72,11 @@ The Uploader
 An uploader keeps the files uploaded to Transifex up-to-date as good as possible.
 This includes:
 
+- Check the [Translation Priority List] to decide which file to upload first.
 - Upload new beautified files if there are any.
 - Upload modified beautified files if the modification is significant (totally different content, translation-significant beautifying etc.).
 - Delete files uploaded to Transifex if they are not needed anymore.
-- Update the column `Uploaded version to Transifex` in the Translation Priority List (see above).
+- Update the column `Uploaded version to Transifex` in the [Translation Priority List].
 - If there are source files at Transifex that have not been translated yet, not even partially into any language, replace them with their up-to-date versions.
 - The documentation changes frequently, around one time a day. Thus, translations will never be up-to-date. Additionally, translated versions are not officially signed. That's why you should push partially or fully translated files as soon as possible to the website. (The more people (website visitors) we attract, the more translators we might attract, too.)
 
@@ -81,11 +85,11 @@ This includes:
 The Translator
 --------------
 
-This is a [Transifex role](https://docs.transifex.com/getting-started/translators) and thus, a [Transifex account][Transifex signup] is necessary.
+This is a [Transifex role](https://docs.transifex.com/getting-started/translators) and thus, a [Transifex account] is necessary.
 His/her job includes:
 
-- Translate the files by using the Transifex interface and following the translation conventions (see the list below).
-- Check the priority list (see the [translation priority list](/doc/somewhere/translation-priority-list)) to decide which file to translate first.
+- Check the [Translation Priority List] to decide which file to translate first.
+- Translate the files by using the Transifex interface and following the [Translation Conventions] (see below).
 - Help a file to become fully translated rather than partially.
 
 ### Translation Conventions ###
@@ -95,7 +99,7 @@ Please pay attention to the following conventions when translating the website o
 1.  Keep in mind that the documentation uses **Markdown** files as source files to translate.
     Thus, any character string with special Markdown meaning has to be kept untranslated or to be adapted if necessary.
     See [here](https://daringfireball.net/projects/markdown/) and [here](https://help.github.com/articles/basic-writing-and-formatting-syntax/) for general manuals how to write in Markdown.
-    Also see [our Markdown conventions](/doc/doc-guidelines/#markdown-conventions) followed in this documentation.
+    Also see our [Markdown Conventions] followed in this documentation.
 2.  Do not split a single translation sentence over multiple lines. (This should not be possible when using the Transifex interface.)
 3.  If a source sentence is split over several lines then comment it or open a new issue via the Transifex interface.
     You can do this by commenting that phrase or opening a new issue using the Transifex interface in both cases.
@@ -143,28 +147,30 @@ There is a correct English sentence or phrase. | Translate it.
 
 ### List of language-specific prefixes ###
 
-&hellip;, /de (German), &hellip;, /en (American English), &hellip;, /fr (French), &hellip; (to be completed)
+&hellip;, /de (German), &hellip;, /en or no prefix (American English), &hellip;, /fr (French), &hellip; (to be completed)
 
 The Reviewer
 ------------
 
-This is a [Transifex role](https://docs.transifex.com/translation/reviewing-strings) and thus, you will need a [Transifex account][transifex signup].
+This is a [Transifex role](https://docs.transifex.com/translation/reviewing-strings) and thus, you will need a [Transifex account].
 A reviewer has to check if translations have been done with care and correct them if necessary.
 He/she has to follow these points:
 
+- Checking the [Translation Priority List] to decide which file to review first.
 - Review fully translated files first if possible.
 - Try to review a file fully before you proceed to the next one. (We like fully reviewed files rather than partially ones.)
 - Try not to review your own translations.
-- Consider all translation conventions (see above) *carefully*.
+- Consider all [Translation Conventions] *carefully*.
   (This is, why you are a reviewer!)
-
-**Current reviewers:** See our [project on Transifex][qubes on transifex].
 
 The Downloader
 --------------
 
-The downloader has to download reviewed, translated files from Transifex and put them into the correct folders with their correct file names of a *Test Branch*.
-He/she also has to update the column `Downloaded versions from Transifex` of the priority list (see above).
+The downloader has to
+
+- check the [Translation Priority List] to decide which file to download from Transifex first.
+- download reviewed, translated files from Transifex and put them into the correct folders with their correct file names of a *Test Branch*.
+- update the column `Downloaded versions from Transifex` of the [Translation Priority List].
 
 **Current downloaders:** &hellip;, &hellip; *at least contact details or a (nick)name*
 
@@ -174,10 +180,11 @@ The Tester
 Reviewing is not enough since links should be checked for plausible working and naming and even reviewers can make mistakes.
 Thus, a tester should
 
+- check the priority list [Translation Priority List] to decide which file to test first.
 - check the translated files in the *Test branch* for plausible formattings,
 - test all links in those files for working correctly,
 - move to or merge with the *Master branch* (i.e. getting online) and
-- update the column `Tested` in the Translation Priority List (see above).
+- update the column `Tested` in the [Translation Priority List].
 
 After all tests have succeeded, the tester uploads the file to the official online website.
 If a test fails, the tester has to comment the mistake or open an issue via the Transifex interface.
@@ -186,4 +193,7 @@ If a test fails, the tester has to comment the mistake or open an issue via the 
 
 [mailing list qubes-translation]: /mailing-lists/#qubes-translation
 [qubes on transifex]: https://www.transifex.com/otf/qubes/
-[transifex signup]: https://www.transifex.com/signup/
+[Transifex account]: https://www.transifex.com/signup/
+[Translation Priority List]: ./#Translation-Priority-List
+[Translation Conventions]: ./#Translation-Conventions
+[Markdown Conventions]: /doc/doc-guidelines/#markdown-conventions
