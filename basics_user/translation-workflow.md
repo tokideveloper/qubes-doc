@@ -122,8 +122,10 @@ Also follow these conventions:
 
 | Type | Source string | Translated string (e.g. German (de))| Note |
 | ---- | ------------- | ----------------------------------- | ---- |
-| **an internal path** | /doc/path/to/some/file | **/de**/doc/path/to/some/file | Adapt the prefix with regard to the target language (see the list below). |
+| **an internal server path** | /doc/path/to/some/file | **/de**/doc/path/to/some/file | Adapt the prefix with regard to the target language (see the list below). |
 | **an external URL** | http://somewhere.on.the.internet/some/path/ | http://somewhere.on.the.internet/some/path/ | Keep it as is. |
+| **a local path** | /etc/passwd | /etc/passwd | Keep it as is. |
+| **a command** | cp /etc/passwd . | cp /etc/passwd . | Keep it as is. |
 | **YAML header** | \-\-\-<br>layout: doc<br>title: VM Tools<br>permalink: /doc/vm-tools/<br>redirect_from:<br>- /en/doc/vm-tools/<br>- /doc/VmTools/<br>- /wiki/VmTools/<br>\-\-\- | \-\-\-<br>layout: doc<br>title: **VM-Werkzeuge**<br>permalink: **/de**/doc/vm-tools/<br>redirect_from:<br>- <br>- **/de**/doc/VmTools/<br>- **/de**/wiki/VmTools/<br>\-\-\- | Remove the /en/&hellip; path as given in the example.|
 | **inline-style link**<br>*(no space between *`](`*)* | \[An internal file\](/doc/internal/link/to/file/) | \[**Eine interne Datei**\](**/de**/doc/internal/link/to/file/) | |
 | **inline-style link with title**<br>*(no space between *`](`*, but a space after the URL and before *`"`*)* | \[An internal file\](/doc/internal/link/to/file/ "Click here to get to the internal file!") | \[**Eine interne Datei**\](**/de**/doc/internal/link/to/file/ "**Klicken Sie hier, um zur internen Datei zu gelangen!**") | |
@@ -133,6 +135,7 @@ Also follow these conventions:
 | **leading and trailing spaces** | \* AAA<br>&nbsp;&nbsp;\* BBB<br>\* CCC<br><br>A quote:<br>&nbsp;&nbsp;&nbsp;&nbsp;This is a quote example. | \* **AAA**<br>&nbsp;&nbsp;\* **BBB**<br>\* **CCC**<br><br>**Ein Zitat**:<br>&nbsp;&nbsp;&nbsp;&nbsp;**Dies ist ein Zitatbeispiel.** | Keep them as they are by **just copying them**. |
 | **[escape sequence](https://daringfireball.net/projects/markdown/syntax#backslash)** | A single backslash: \\\\ | Ein einzelner Backslash: \\\\ | Keep it as is. |
 | **terms from the [glossary](/doc/glossary/)** | TemplateVM,<br>DVM | TemplateVM **(»VorlageVM«)**,<br>DVM | This way, it doesn't matter if the software has been translated or not since both cases are considered. |
+| **(button) labels** | Click on "Copy". | **Klicken Sie auf »**Copy**« (»Kopieren«).** | This way, it doesn't matter if the software has been translated or not since both cases are considered. |
 | **underlinings** | Section Title<br>&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;<br><br>Subsection Title<br>\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\- | **Abschnittstitel**<br>**&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;&#61;**<br><br>**Unterabschnittstitel**<br>**\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-** | The number of `=` and `-` characters for underlining (sub)sections shall match the number of characters in that (sub)section title. |
 | **screenshot** | \!\[edit-button-desktop\](/attachment/wiki/doc-edit/03-button2.png) | \!\[edit-button-desktop\](/attachment/wiki/doc-edit/03-button2.png) | Keep it as is. |
 
