@@ -110,11 +110,11 @@ Please pay attention to the following conventions when translating the website o
 7.  Don't forget final periods etc. if given in the source phrase.
 8.  Pay attention to the differences between diacritics, apostrophes, quotation marks, backticks and so on.
 9.  As Andrew David Wong mentioned in a Transifex comment:
-  > Comma placement relative to quotation marks is determined by regional convention. See, e.g.,
-  > http://blog.apastyle.org/apastyle/2011/08/punctuating-around-quotation-marks.html
-  > https://owl.english.purdue.edu/owl/resource/577/03/
-  > http://www.quickanddirtytips.com/education/grammar/how-to-use-quotation-marks
-  > (Edited to add: The above remark applies to English.)"
+    > Comma placement relative to quotation marks is determined by regional convention. See, e.g.,
+    > http://blog.apastyle.org/apastyle/2011/08/punctuating-around-quotation-marks.html
+    > https://owl.english.purdue.edu/owl/resource/577/03/
+    > http://www.quickanddirtytips.com/education/grammar/how-to-use-quotation-marks
+    > (Edited to add: The above remark applies to English.)"
 10. Follow language-dependent guidelines you should work out in advance and write them down on a new page here.
     (E.g. in German, a typical question is about which quotation marks to use: either `„“` or `»«`.)
 
