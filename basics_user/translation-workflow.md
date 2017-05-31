@@ -199,7 +199,7 @@ If a test fails, the tester has to comment the mistake or open an issue via the 
 [Transifex account]: https://www.transifex.com/signup/
 [Translation Priority List]: ./#Translation-Priority-List
 [Translation Conventions]: ./#Translation-Conventions
-[Transifex Translators] : https://docs.transifex.com/getting-started/translators
+[Transifex Translators]: https://docs.transifex.com/getting-started/translators
 [Markdown Conventions]: /doc/doc-guidelines/#markdown-conventions
 [daringfireball Markdown]: https://daringfireball.net/projects/markdown/
 [github Markdown]: https://help.github.com/articles/basic-writing-and-formatting-syntax/
