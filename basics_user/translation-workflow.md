@@ -33,7 +33,7 @@ To do so, he/she has to keep in mind:
 
 Thus, the lister needs access to information concerning visitor access rate.
 
-**Current beautifiers:** &hellip;, &hellip; *at least contact details or a (nick)name*
+**Current listers:** &hellip;, &hellip; *at least contact details or a (nick)name*
 
 ### Translation Priority List ###
 
